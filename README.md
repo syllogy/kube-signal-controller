@@ -53,7 +53,7 @@ spec:
 Pros:
 - Works on all clusters using standard features
 - Works regardless of process namespace configuration on the pod
--
+
 Cons:
 - Only works on container images with userspace tooling. Not Distroless, etc
 
@@ -61,7 +61,7 @@ Cons:
 
 Pros:
 - Works with any container image, even Distroless
--
+
 Cons:
 - Currently in alpha, must be enabled via a Kubernetes feature gate
 - Could pollute pod manifest with EphemeralContainers
@@ -71,7 +71,7 @@ Cons:
 Pros:
 - Works on all clusters using standard features
 - Works with any container image, even Distroless
--
+
 Cons:
 - Sidecar container must be injected
 - Sidecar container must share process namespace with target container
